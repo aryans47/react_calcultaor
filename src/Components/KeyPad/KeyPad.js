@@ -82,7 +82,7 @@ function KeyPad(props) {
       value: "+",
     },
   ];
-//mapping keys and symbol
+//mapping keys and calling
   return (
     <div className="keypad">
       <div className="keypad_keys">
@@ -95,7 +95,7 @@ function KeyPad(props) {
           </p>
         ))}
       </div>
-
+//mapping symbols and calling
       <div className="keypad_symbols">
         {symbols.map((item, index) => (
           <p
