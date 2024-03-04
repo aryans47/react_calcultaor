@@ -24,7 +24,7 @@ function App() {
   const [history, setHistory] = useState(
     JSON.parse(localStorage.getItem("calculator-app-history")) || []
   );
-
+//handlekeypress function
   const handleKeyPress = (keyCode, key) => {
     if (!keyCode) return;
     if (!usedKeyCodes.includes(keyCode)) return;
@@ -63,7 +63,7 @@ function App() {
       setHistory(tempHistory);
     }
   };
-
+//caclulateResult function 
   const calculateResult = (exp) => {
     if (!exp) {
       setResult("");
