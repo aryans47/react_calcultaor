@@ -93,10 +93,12 @@ function App() {
     >
       <div className="app_calculator">
         <div className="app_calculator_navbar">
+      //toggle if it is darkmode is true it set to false and vice versa
           <div
             className="app_calculator_navbar_toggle"
             onClick={() => setIsDarkMode(!isDarkMode)}
           >
+              //toggle circle to change the image and side the circle 
             <div
               className={`app_calculator_navbar_toggle_circle ${
                 isDarkMode ? "app_calculator_navbar_toggle_circle_active" : ""
