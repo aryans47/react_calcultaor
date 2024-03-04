@@ -15,8 +15,9 @@ function Header(props) {
   }, [props.expression]);
 
   return (
-    <div className="header custom-scroll">
+
     //history
+    <div className="header custom-scroll">
       <div className="header_history">
         {props.history &&
           props.history?.map((item) => (
@@ -24,11 +25,13 @@ function Header(props) {
           ))}
       </div>
       <br />
-        //expression
+
+    //expression
       <div ref={expressionRef} className="header_expression custom-scroll">
         <p>{props.expression}</p>
       </div>
-       //result 
+
+        //result
       <p ref={resultRef} className="header_result">
         {props.result}
       </p>
