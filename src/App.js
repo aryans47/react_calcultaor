@@ -89,6 +89,7 @@ function App() {
       className="app"
       tabIndex="0"
       onKeyDown={(event) => handleKeyPress(event.keyCode, event.key)}
+  //condition for dark theme
       data-theme={isDarkMode ? "dark" : ""}
     >
       <div className="app_calculator">
