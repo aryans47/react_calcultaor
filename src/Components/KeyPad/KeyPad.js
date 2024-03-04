@@ -3,6 +3,7 @@ import React from "react";
 import "./KeyPad.css";
 
 function KeyPad(props) {
+  key store in array of object
   const keys = [
     {
       keyCode: 55,
@@ -53,7 +54,7 @@ function KeyPad(props) {
       label: "=",
     },
   ];
-
+//symbol is also store in array of objects
   const symbols = [
     {
       label: "⌫",
@@ -81,7 +82,7 @@ function KeyPad(props) {
       value: "+",
     },
   ];
-
+//mapping keys and symbol
   return (
     <div className="keypad">
       <div className="keypad_keys">
